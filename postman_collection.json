@@ -1,0 +1,33 @@
+{
+  "info": {
+    "name": "EZ Labs Contact Form API",
+    "_postman_id": "12345678-aaaa-bbbb-cccc-123456789abc",
+    "description": "Postman collection for EZ Labs Front-End Intern Test",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "POST Contact Us",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Shailesh Singh\",\n  \"email\": \"singhshailesh8800@gmail.com\",\n  \"phone\": \"7369822437\",\n  \"message\": \"Hello from Postman!\"\n}"
+        },
+        "url": {
+          "raw": "https://vernanbackend.ezlab.in/api/contact-us/",
+          "protocol": "https",
+          "host": ["vernanbackend", "ezlab", "in"],
+          "path": ["api", "contact-us", "/"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
